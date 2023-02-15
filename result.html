@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Search Results</title>
+    <style>
+        #title
+        {
+            text-align: center;
+            font-size: 27px;
+            color: white;
+            background: linear-gradient(90deg, rgba(228, 1, 1, 0) 0%, #FFFFFF 0.01%, #E45501 36.98%, #E45501 49.48%, #E45501 62.5%, #FFFFFF 100%, #FFFFFF 100%);
+            line-height: 55px;
+        }
+            #results {
+              top: 50px;
+              position: relative;
+              display: grid;
+              display: flex;
+              flex-wrap: wrap;
+              row-gap: 200px;
+              column-gap: 150px;
+              justify-content: center;
+            }
+            #results div {
+              position: relative;
+              width: 200px;
+              height: 340px;
+              margin: 10px;
+              text-align: center;
+              display: grid;
+              justify-content: space-between;
+              align-items: top;
+            }
+            #results h2{
+                position: relative;
+            font-size: 20px;
+            }
+            #results p
+            {
+              font-family: "Segoe UI";
+                position: relative;
+                font-size: 15px;
+            }
+            #results img {
+            position: relative;
+            width: 200px;
+            height: 250px;
+            object-fit: cover;
+            }
+          
+            #results button {
+            top: 430px;
+            position: absolute;
+            width: 100%;
+            margin-top: 10px;
+            padding: 10px;
+            color: white;
+            background-color: #E45501;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            border-color: transparent;filter: drop-shadow(0px 8px 14px rgba(47, 102, 167, 0.5));
+            }
+          
+    </style>
+  </head>
+  <body>
+    <h2 id="title">Results</h2>
+    <div id="results"></div>
+    <script src="result.js"></script>
+  </body>
+</html>
